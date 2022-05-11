@@ -1,0 +1,99 @@
+@import 'reset.css';
+
+.wrapper {
+    display: flex;
+
+}
+
+.table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table table {
+    width: 80%;
+    height: 70%;
+}
+
+.table tr,
+th,
+td {
+    border-collapse: collapse;
+}
+
+.table th,
+td {
+    border: 1px solid black;
+    width: 2rem;
+}
+
+.table tr:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    height: 1rem;
+}
+
+.table tr:nth-of-type(even):not(tr:first-child) {
+    background-color: rgb(247, 247, 247);
+}
+
+.table :not(tr:first-child) td {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    height: 5rem;
+    transition: linear 0.2s;
+}
+
+img {
+    flex: 1;
+    height: 100vh;
+    background-image: url('../img/map.png');
+    background-size: cover;
+}
+
+.basket {
+    display: flex;
+    width: 80%;
+    margin-top: 1rem;
+    height: 5rem;
+    border: 2px solid rgb(48, 48, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.basket .classes {
+    background-color: rgb(255, 210, 10);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0 5px;
+
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.basket .classes:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+.sub {
+    font-size: 50px;
+    text-align: center;
+    margin-top: .8rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 50%;
+    transition: linear 0.2s;
+}
