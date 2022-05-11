@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resetcode.css" />
+    <!-- 초기화 코드 -->
+    <style>
+      /*헤더*/
+      .header {
+        width: 100vw;
+        height: 5vw;
+        display: flex;
+        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
+      }
+      .logo {
+        margin: 15px 15px;
+        padding: 15px 40px;
+        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
+      }
+      .rightside {
+        margin: 30px;
+        margin-left: auto;
+        display: flex;
+        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
+      }
+      /*헤더 끝*/
+      /*주 내용*/
+      .section {
+        width: 90vw;
+        margin: auto;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+      }
+      .search-bar {
+        width: 90%;
+        margin: auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
+      }
+      .search-detail {
+        padding: 10px 50px;
+      }
+      .search-wall {
+        border: 1px solid #aaa;
+      }
+      .content {
+        margin-top: 100px;
+        padding: 150px;
+        text-align: center;
+        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
+      }
+      /*주 내용 끝*/
+    </style>
+    <title>main</title>
+  </head>
+  <body>
+    <header class="header">
+      <!--헤더(로고, 햄버거버튼, 정보버튼)-->
+      <div>
+        <h2 class="logo">logo</h2>
+      </div>
+      <nav class="btn rightside">
+        <h2>햄버거버튼</h2>
+        <h2>내정보버튼</h2>
+      </nav>
+    </header>
+    <!--헤더 끝-->
+    <section class="section">
+      <!--주 내용-->
+      <article>
+        <div class="search-bar">
+          <!--검색창-->
+          <div class="search-detail"><h2>지역</h2></div>
+          <div class="search-wall"></div>
+          <div class="search-detail"><h2>과목</h2></div>
+          <div class="search-wall"></div>
+          <div class="search-detail"><h2>나이</h2></div>
+          <div class="search-wall"></div>
+          <div class="search-detail"><h2>수강료</h2></div>
+          <div class="search-wall"></div>
+          <div class="search-detail"><h2>검색버튼</h2></div>
+        </div>
+      </article>
+      <article class="content">
+        <!--이벤트-->
+        <div><h2>이벤트</h2></div>
+      </article>
+    </section>
+    <!--주 내용 끝-->
+  </body>
+</html>
