@@ -4,69 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="resetcode.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <!-- 초기화 코드 -->
-    <style>
-      /*헤더*/
-      .header {
-        width: 100vw;
-        height: 5vw;
-        display: flex;
-        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
-      }
-      .logo {
-        margin: 15px 15px;
-        padding: 15px 40px;
-        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
-      }
-      .rightside {
-        margin: 30px;
-        margin-left: auto;
-        display: flex;
-        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
-      }
-      /*헤더 끝*/
-      /*주 내용*/
-      .section {
-        width: 90vw;
-        margin: auto;
-        margin-top: 150px;
-        display: flex;
-        flex-direction: column;
-      }
-      .search-bar {
-        width: 90%;
-        margin: auto;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-evenly;
-        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
-      }
-      .search-detail {
-        padding: 10px 50px;
-      }
-      .search-wall {
-        border: 1px solid #aaa;
-      }
-      .content {
-        margin-top: 100px;
-        padding: 150px;
-        text-align: center;
-        border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
-      }
-      /*주 내용 끝*/
-    </style>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
     <title>main</title>
   </head>
   <body>
     <header class="header">
       <!--헤더(로고, 햄버거버튼, 정보버튼)-->
       <div>
-        <h2 class="logo">logo</h2>
+        <div class="logo"><div class="logo-img">logo</div></div>
       </div>
-      <nav class="btn rightside">
-        <h2>햄버거버튼</h2>
-        <h2>내정보버튼</h2>
+      <nav class="rightside">
+        <i class="btn fa-solid fa-bars"></i>
+        <i class="btn fa-solid fa-address-card"></i>
       </nav>
     </header>
     <!--헤더 끝-->
@@ -75,15 +30,61 @@
       <article>
         <div class="search-bar">
           <!--검색창-->
-          <div class="search-detail"><h2>지역</h2></div>
+          <div class="search-detail">
+            <div>지역</div>
+            <div>
+              <ul>
+                <li>광산구</li>
+                <li>남구</li>
+                <li>동구</li>
+                <li>북구</li>
+                <li>서구</li>
+              </ul>
+            </div>
+          </div>
           <div class="search-wall"></div>
-          <div class="search-detail"><h2>과목</h2></div>
+          <div class="search-detail">
+            <div>과목</div>
+            <div>
+              <ul>
+                <li>국어</li>
+                <li>수학</li>
+                <li>영어</li>
+                <li>태권도</li>
+                <li>피아노</li>
+              </ul>
+            </div>
+          </div>
           <div class="search-wall"></div>
-          <div class="search-detail"><h2>나이</h2></div>
+          <div class="search-detail">
+            <div>나이</div>
+            <div>
+              <ul>
+                <li>~7세</li>
+                <li>8세~10세</li>
+                <li>11세~13세</li>
+                <li>14세~16세</li>
+                <li>17세~19세</li>
+              </ul>
+            </div>
+          </div>
           <div class="search-wall"></div>
-          <div class="search-detail"><h2>수강료</h2></div>
+          <div class="search-detail">
+            <div>수강료</div>
+            <div>
+              <ul>
+                <li>~100,000</li>
+                <li>100,000~300,000</li>
+                <li>300,000~600,000</li>
+                <li>600,000~1,000,000</li>
+                <li>1,000,000~</li>
+              </ul>
+            </div>
+          </div>
           <div class="search-wall"></div>
-          <div class="search-detail"><h2>검색버튼</h2></div>
+          <div class="search-detail">
+            <i class="search-btn fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
       </article>
       <article class="content">
