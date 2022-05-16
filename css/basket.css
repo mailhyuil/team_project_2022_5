@@ -34,12 +34,9 @@ div.wrapper.click {
     transform: translateX(0);
 }
 
-div.wrapper div.sub-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    overflow: scroll;
+div.sub-wrapper {
+    margin: 3rem;
+    overflow: auto;
 }
 
 div.wrapper div.toggle_button {
@@ -49,20 +46,12 @@ div.wrapper div.toggle_button {
     padding: .5rem;
 }
 
-div.wrapper div.classes_basket {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 div.wrapper div.classes {
     display: block;
     background-color: rgb(255, 255, 255);
     min-height: 5rem;
     width: 10rem;
     margin: .5rem 1rem;
-
     border-radius: .3rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 60, 0.1);
     padding: 1rem;
