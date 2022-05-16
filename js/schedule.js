@@ -109,9 +109,9 @@ table.addEventListener('drop', (e) => {
     }
 
     /* 스케줄에 집어넣기 */
-    if (e.target.className === "dates"
+    if (e.target.className === "dates" // js에서 class 추가했음
         &&
-        e.target.parentNode.className === 'days') {
+        e.target.parentNode.className === 'days') { // js에서 class 추가했음
 
         const $dragged = dragged.cloneNode(true); // 드래그 요소 깊은 복사본 만들기
 
@@ -180,3 +180,45 @@ table.addEventListener('drop', (e) => {
     }
 })
 
+// 스케줄에 클릭으로 추가
+for (let c of classes) {
+    c.addEventListener('click', () => {
+        let schedule = c.dataset.schedule.split(',');
+        let day;
+        let date;
+
+
+        for (let i = 0; i < schedule.length; i++) {
+            day = schedule[i].split('_')[0];
+            date = schedule[i].split('_')[1];
+            for (let t of td) {
+                if (t.dataset.date === date
+                    &&
+                    t.parentNode.dataset.day === day
+                    &&
+                    t.hasChildNodes()
+                ) {
+                    alert('이미 추가된 스케줄이 있습니다.');
+                    return;
+                }
+            }
+        }
+
+
+        for (let i = 0; i < schedule.length; i++) {
+            day = schedule[i].split('_')[0];
+            date = schedule[i].split('_')[1];
+            //e.target과 같은 data type인 노드들을 전부 선택
+            for (let t of td) {
+                if (t.dataset.date === date
+                    &&
+                    t.parentNode.dataset.day === day
+                ) {
+                    t.appendChild(c.cloneNode(true));
+
+                }
+            }
+        }
+        c.parentNode.removeChild(c); // 장바구니에서 지우기
+    })
+}
