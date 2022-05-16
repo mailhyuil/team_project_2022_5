@@ -1,5 +1,28 @@
 @import 'reset.css';
 
+
+::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgb(73, 73, 73);
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    padding: .2rem;
+    border-radius: .5rem;
+    background-color: rgb(194, 194, 194);
+
+}
+
+
 div.wrapper {
     position: fixed;
     top: 0;
@@ -30,6 +53,22 @@ div.wrapper {
     background-color: rgb(255, 255, 184);
 }
 
+.basket-button .count {
+    position: absolute;
+    display: none;
+    top: -.5rem;
+    right: -.5rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+
+}
+
 div.wrapper.click {
     transform: translateX(0);
 }
@@ -41,20 +80,25 @@ div.sub-wrapper {
 
 div.wrapper div.toggle_button {
     display: flex;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(233, 233, 233);
     align-items: center;
     padding: .5rem;
 }
 
+
+
 div.wrapper div.classes {
-    display: block;
+    display: flex;
     background-color: rgb(255, 255, 255);
     min-height: 5rem;
-    width: 10rem;
     margin: .5rem 1rem;
     border-radius: .3rem;
     box-shadow: 0px 0px 20px rgba(0, 0, 60, 0.1);
     padding: 1rem;
+}
+
+div.wrapper div.classes div.content-section {
+    margin: 0 1rem;
 }
 
 div.wrapper div.classes .schedule {
@@ -62,4 +106,26 @@ div.wrapper div.classes .schedule {
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: break-all;
+}
+
+div.sub-wrapper h1 {
+    font-size: 30px;
+    color: rgb(46, 46, 46);
+}
+
+.sub {
+    font-size: 50px;
+    text-align: center;
+    margin-top: .8rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 50%;
+    transition: linear 0.2s;
+}
+
+.sub:hover {
+    cursor: pointer;
+    background-color: red;
 }
