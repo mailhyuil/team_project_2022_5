@@ -1,0 +1,76 @@
+@import 'reset.css';
+
+div.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(1000px);
+    transition: all 500ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    height: 100%;
+    background-color: rgb(245, 245, 245);
+    right: 0;
+    display: flex;
+}
+
+.basket-button {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    right: 5rem;
+    top: 3rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket-button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 184);
+}
+
+div.wrapper.click {
+    transform: translateX(0);
+}
+
+div.wrapper div.sub-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    overflow: scroll;
+}
+
+div.wrapper div.toggle_button {
+    display: flex;
+    background-color: rgb(168, 168, 168);
+    align-items: center;
+    padding: .5rem;
+}
+
+div.wrapper div.classes_basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.wrapper div.classes {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    min-height: 5rem;
+    width: 10rem;
+    margin: .5rem 1rem;
+
+    border-radius: .3rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 60, 0.1);
+    padding: 1rem;
+}
+
+div.wrapper div.classes .schedule {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
