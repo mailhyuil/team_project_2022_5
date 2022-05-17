@@ -3,9 +3,23 @@
   width: 100vw;
   height: 100vh;
 }
+.section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(1200px);
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 60%;
+  height: 100%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+}
+.section.click {
+  transform: translateX(0);
+}
 .left-bar {
   display: flex;
-  flex: 0.5;
+  width: 4.5vw;
   height: 100%;
   background-color: #aaa; /*영역을 눈으로 확인하려고 해놓음*/
 }
@@ -33,12 +47,6 @@
   background-image: url("../img/map.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.section {
-  display: flex;
-  flex: 8;
-  height: 100%;
-  margin-left: auto;
 }
 .put-in-btn {
   display: flex;
