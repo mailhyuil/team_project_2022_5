@@ -23,6 +23,32 @@
   align-items: center;
   border: 2px solid #aaa; /*영역을 눈으로 확인하려고 해놓음*/
 }
+.right-btn {
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+}
+.right-btn-detail {
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  top: 65px;
+  right: 0;
+}
+.right-btn-content {
+  white-space: nowrap;
+  padding: 10px;
+  border: 1px solid black;
+}
+.right-btn:hover .right-btn-detail {
+  opacity: 1;
+}
+.right-btn-content h1 {
+  margin-bottom: 10px;
+}
+.right-btn-content h1:last-of-type {
+  margin-bottom: 0;
+}
 .btn {
   width: 100%;
   min-width: 40px;
@@ -55,28 +81,18 @@
   font-size: 20px;
   border: none;
 }
-.select-main {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.select-content div {
-  font-size: 20px;
-}
-.select-content {
-  margin-top: 15px;
-  visibility: hidden;
-}
-.search-detail:hover .select-content {
-  visibility: visible;
-}
 .search-btn {
   width: 100%;
   height: 100%;
 }
 .search-wall {
   border: 1px solid #aaa;
+}
+.select-main {
+  width: 100%;
+  height: 100%;
+  font-size: medium;
+  border: none;
 }
 .content {
   margin-top: 100px;
