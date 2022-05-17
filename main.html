@@ -20,8 +20,25 @@
         <div class="logo"><div class="logo-img">logo</div></div>
       </div>
       <nav class="rightside">
-        <i class="btn fa-solid fa-bars"></i>
-        <i class="btn fa-solid fa-address-card"></i>
+        <div class="right-btn">
+          <i class="btn fa-solid fa-bars"></i>
+          <div class="right-btn-detail">
+            <div class="right-btn-content">
+              <h1>스케쥴표</h1>
+              <h1>금액결제</h1>
+            </div>
+          </div>
+        </div>
+        <div class="right-btn">
+          <i class="btn fa-solid fa-address-card"></i>
+          <div class="right-btn-detail">
+            <div class="right-btn-content">
+              <h1>로그인</h1>
+              <h1>내정보</h1>
+              <h1>로그아웃</h1>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <!--헤더 끝-->
@@ -31,48 +48,45 @@
         <div class="search-bar">
           <!--검색창-->
           <div class="search-detail">
-            <div class="select-main">지역</div>
-            <div class="select-content">
-              <div>광산구</div>
-              <div>남구</div>
-              <div>동구</div>
-              <div>북구</div>
-              <div>서구</div>
-            </div>
+            <select class="select-main" name="지역">
+              <option value="">지역</option>
+              <option value="광산구">광산구</option>
+              <option value="남구">남구</option>
+              <option value="동구">동구</option>
+              <option value="북구">북구</option>
+              <option value="서구">서구</option>
+            </select>
           </div>
           <div class="search-wall"></div>
           <div class="search-detail">
-            <div class="select-main">과목</div>
-            <div class="select-content">
-              <div>국어</div>
-              <div>수학</div>
-              <div>영어</div>
-              <div>태권도</div>
-              <div>피아노</div>
-            </div>
+            <input class="select-main" type="text" value="과목" />
           </div>
           <div class="search-wall"></div>
           <div class="search-detail">
-            <div class="select-main">나이</div>
-            <div class="select-content">
-              <div>7세 이하</div>
-              <div>8세 ~ 10세</div>
-              <div>11세 ~ 13세</div>
-              <div>14세 ~ 16세</div>
-              <div>17세 ~ 19세</div>
-              <div>20세 이상</div>
-            </div>
+            <select class="select-main" name="나이">
+              <option value="7세 이하">7세 이하</option>
+              <option value="8세 ~ 10세">8세 ~ 10세</option>
+              <option value="11세 ~ 13세">11세 ~ 13세</option>
+              <option value="14세 ~ 16세">14세 ~ 16세</option>
+              <option value="17세 ~ 19세">17세 ~ 19세</option>
+              <option value="20세 이상">20세 이상</option>
+            </select>
           </div>
           <div class="search-wall"></div>
           <div class="search-detail">
-            <div class="select-main">수강료</div>
-            <div class="select-content">
-              <div>100,000원 이하</div>
-              <div>100,000원 ~ 300,000원</div>
-              <div>300,000원 ~ 600,000원</div>
-              <div>600,000원 ~ 1,000,000원</div>
-              <div>1,000,000원 이상</div>
-            </div>
+            <select class="select-main" name="수강료">
+              <option value="100,000원 이하">100,000원 이하</option>
+              <option value="100,000원 ~ 300,000원">
+                100,000원 ~ 300,000원
+              </option>
+              <option value="300,000원 ~ 600,000원">
+                300,000원 ~ 600,000원
+              </option>
+              <option value="600,000원 ~ 1,000,000원">
+                600,000원 ~ 1,000,000원
+              </option>
+              <option value="1,000,000원 이상">1,000,000원 이상</option>
+            </select>
           </div>
           <div class="search-wall"></div>
           <div class="search-detail">
