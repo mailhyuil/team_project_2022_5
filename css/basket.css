@@ -89,6 +89,7 @@ div.wrapper div.toggle_button {
 
 div.wrapper div.classes {
     display: flex;
+    justify-content: space-between;
     background-color: rgb(255, 255, 255);
     min-height: 5rem;
     margin: .5rem 1rem;
@@ -99,13 +100,6 @@ div.wrapper div.classes {
 
 div.wrapper div.classes div.content-section {
     margin: 0 1rem;
-}
-
-div.wrapper div.classes .schedule {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
 }
 
 div.sub-wrapper h1 {
