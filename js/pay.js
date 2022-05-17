@@ -11,7 +11,7 @@ for (let node of classParent.childNodes) {
 
 let sum = 0;
 for (let c of classes) {
-    let intPayment = Number.parseInt(c.dataset.payment);
+    let intPayment = Number.parseInt(c.dataset.expense);
     sum += intPayment;
 }
 
@@ -25,7 +25,7 @@ for (let sub of subs) {
         sum = 0;
         console.log(classes);
         for (let c of classes) {
-            let intPayment = Number.parseInt(c.dataset.payment);
+            let intPayment = Number.parseInt(c.dataset.expense);
             sum += intPayment;
         }
         result.innerHTML = `총액 : ${sum}원/월`;
