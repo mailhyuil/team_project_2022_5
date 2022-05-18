@@ -1,5 +1,6 @@
-const classes = document.querySelectorAll('.classes'); // 장바구니 학원 불러오기
+let classes = document.querySelectorAll('.classes'); // 장바구니 학원 불러오기
 const table = document.querySelector('.table'); // 테이블 섹션
+const schedule_table = table.querySelector("table");
 const tr = document.querySelectorAll('tr[data-day]') // 요일
 const td = document.querySelectorAll('td'); // 시간
 const sub = document.querySelector('.sub');
@@ -222,3 +223,31 @@ for (let c of classes) {
         c.parentNode.removeChild(c); // 장바구니에서 지우기
     })
 }
+
+//스케줄 클릭으로 빼기
+schedule_table.addEventListener('click', (e) => {
+    if (e.target.className === "classes") {
+        let schedule = e.target.dataset.schedule.split(',');
+        let day;
+        let date;
+
+        for (let i = 0; i < schedule.length; i++) {
+            day = schedule[i].split('_')[0];
+            date = schedule[i].split('_')[1];
+
+            for (let t of td) {
+                if (t.dataset.date === date
+                    &&
+                    t.parentNode.dataset.day === day
+                    &&
+                    t != e.target) {
+                    t.removeChild(t.firstChild);
+                }
+            }
+        }
+        const basket = document.querySelector("div.basket");
+        basket.appendChild(e.target);
+
+
+    }
+})
