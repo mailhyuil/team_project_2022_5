@@ -97,3 +97,31 @@ img {
     border-radius: 50%;
     transition: linear 0.2s;
 }
+
+.toPay {
+    position: absolute;
+    background-color: rgb(255, 175, 4);
+    font-weight: bold;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.toPay:active {
+    background-color: rgb(255, 104, 4);
+}
+
+.toSearch {
+    position: absolute;
+    background-color: rgb(255, 175, 4);
+    font-weight: bold;
+    padding: 1rem;
+    bottom: 2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.toSearch:active {
+    background-color: rgb(255, 104, 4);
+}
