@@ -21,17 +21,18 @@
   display: flex;
   width: 4.5vw;
   height: 100%;
+  justify-content: center;
   background-color: #aaa; /*영역을 눈으로 확인하려고 해놓음*/
 }
 .ham-btn {
-  width: 70px;
-  height: 20px;
-  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
 }
 .ham-btn div {
-  height: 10px;
+  height: 8px;
   background-color: black;
-  margin: 10px 0;
+  margin: 7px 0;
 }
 .basket-btn {
   width: 75px;
