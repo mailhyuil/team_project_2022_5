@@ -1,9 +1,136 @@
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: rgb(73, 73, 73);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  padding: .2rem;
+  border-radius: .5rem;
+  background-color: rgb(194, 194, 194);
+
+}
+
+.aside {
+  z-index: 99;
+  display: flex;
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 1rem 0 3rem rgba(0, 0, 0, 0.2);
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.aside.click {
+  transform: translateX(-452px);
+}
+
+.aside_btn {
+  width: 4rem;
+  border: none;
+  background-color: #e9e9e9;
+}
+
+.btn_open {
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar select {
+  width: 3rem;
+  height: 2rem;
+}
+
+.search-bar select:nth-of-type(3) {
+  width: 8rem;
+}
+
+
+article {
+  width: 70%;
+  height: 100%;
+}
+
+#box {
+  position: relative;
+}
+
+#nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#nav input {
+  width: 70px;
+  height: 30px;
+  border: none;
+  text-align: center;
+}
+
+#nav input::placeholder {
+  text-align: center;
+  font-weight: 600;
+}
+
+#edu_list {
+  position: relative;
+  margin: 50px;
+  background-color: white;
+  height: 80%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#edu_list tr {
+  margin-bottom: 10px;
+}
+
+#edu_list th {
+  padding: 30px 120px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.img_size {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .allcontent {
   display: flex;
   width: 100vw;
   height: 100vh;
 }
+
 .section {
+  z-index: 99;
   position: fixed;
   top: 0;
   right: 0;
@@ -13,36 +140,45 @@
   height: 100%;
   background-color: rgb(245, 245, 245);
   display: flex;
+  box-shadow: -1rem 0 3rem rgba(0, 0, 0, 0.2);
 }
+
 .section.click {
   transform: translateX(0);
 }
+
 .left-bar {
   display: flex;
   width: 4.5vw;
   height: 100%;
   justify-content: center;
-  background-color: #ddd; /*영역을 눈으로 확인하려고 해놓음*/
+  background-color: #ddd;
+  /*영역을 눈으로 확인하려고 해놓음*/
 }
+
 .ham-btn {
   display: none;
   width: 50px;
   height: 50px;
   margin-top: 15px;
 }
+
 .ham-btn div {
   height: 8px;
   background-color: black;
   margin: 7px 0;
 }
+
 .basket-btn {
   width: 75px;
   height: 75px;
 }
+
 .basket {
   width: 100%;
   height: 100%;
 }
+
 .map {
   flex: 3;
   height: 100%;
@@ -50,21 +186,31 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .map-btn {
-  padding: 0.5rem 3rem;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   position: absolute;
-  border-radius: 2rem;
-  border: 2px solid #347deb;
+  border-radius: 3rem;
+  border: 5px solid #347deb;
   cursor: pointer;
   background-color: #fff;
 }
-.map-btn:active {
-  background-color: #555;
+
+.map-btn:hover {
+  background-color: rgb(255, 223, 136);
 }
+
+.map-btn:active {
+  background-color: rgb(221, 221, 221);
+}
+
 .map-btn:nth-of-type(1) {
   top: 30%;
   left: 30%;
 }
+
 .map-btn:nth-of-type(2) {
   top: 65%;
   left: 30%;
@@ -79,17 +225,21 @@
   top: 30%;
   left: 80%;
 }
+
 .map-btn:nth-of-type(5) {
   top: 70%;
   left: 60%;
 }
+
 .put-in {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgb(245, 245, 245); /*영역을 눈으로 확인하려고 해놓음*/
+  background-color: rgb(245, 245, 245);
+  /*영역을 눈으로 확인하려고 해놓음*/
 }
+
 .put-in-btn {
   width: 50px;
   height: 100%;
@@ -98,6 +248,7 @@
   align-items: center;
   background-color: rgb(233, 233, 233);
 }
+
 .add {
   position: fixed;
   background-color: black;
@@ -105,10 +256,12 @@
   top: 2%;
   left: 87%;
 }
+
 .add img {
   width: 75px;
   height: 75px;
 }
+
 .content {
   width: 90%;
   height: 85%;
@@ -117,65 +270,112 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(400px, auto);
   gap: 10px;
-  overflow: auto; /*스크롤바*/
-  background-color: white; /*영역을 눈으로 확인하려고 해놓음*/
+  overflow: auto;
+  /*스크롤바*/
+  background-color: white;
+  color: rgb(54, 54, 54);
+  /*영역을 눈으로 확인하려고 해놓음*/
 }
-.content div {
-  border: 1px solid black;
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
-.content::-webkit-scrollbar {
-  /*스크롤바시작*/
-  width: 15px;
+
+.content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(233, 233, 233);
+  padding: 1rem;
 }
-.content::-webkit-scrollbar-thumb {
-  height: 30%;
-  background-color: #222;
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+
 }
-.content::-webkit-scrollbar-track {
-  background-color: #aaa;
-} /*스크롤바끝*/
+
+#add_btn {
+  cursor: pointer;
+}
+
 .img {
   grid-column: 1;
   grid-row: 1;
-  background-image: url("../img/acaimg.jpg");
+  background-image: url("../img/classes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .info {
   grid-column: 2;
   grid-row: 1;
   display: flex;
   flex-direction: column;
 }
+
 .info div {
-  width: 100%;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.info div h1 {
+  margin: auto 0;
+}
+
+.info div i {
+  background-color: #555;
+  padding: 1rem;
+  color: white;
+}
+
+.info p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
 .teacher {
   grid-column: 1;
   grid-row: 2;
   display: flex;
   flex-direction: column;
 }
+
 .teacher-introduce {
   width: 100%;
   height: 50px;
 }
+
 .teacher-info {
   display: flex;
   width: 100%;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
 }
+
+.teacher-info div p {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
 .teacher-info img {
-  width: 30px;
-  height: 30px;
+  width: 10rem;
+  height: 10rem;
+
 }
+
 .others {
   grid-column: 2;
   grid-row: 2;
   height: fit-content;
+}
+
+.others p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2rem;
 }
 
 .btn_box {
@@ -185,18 +385,18 @@
 }
 
 .toSchedule {
+  position: absolute;
+  border: none;
+  bottom: 1rem;
+  right: -10rem;
   padding: 1rem 2rem;
   background-color: rgb(255, 175, 4);
   font-weight: bold;
+  border-radius: .3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
+
 .toSchedule:active {
-  background-color: rgb(255, 104, 4);
-}
-.toHome {
-  padding: 1rem 2rem;
-  background-color: rgb(255, 175, 4);
-  font-weight: bold;
-}
-.toHome:active {
   background-color: rgb(255, 104, 4);
 }
