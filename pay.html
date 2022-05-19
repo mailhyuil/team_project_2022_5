@@ -13,14 +13,12 @@
 <body>
     <aside class="pay_aside">
         <div id="edu_list">
-
             <div class="classes"
                 data-schedule="mon_13:00,mon_14:00,mon_15:00,mon_16:00,wed_13:00,wed_14:00,wed_15:00,wed_16:00,fri_13:00,fri_14:00,fri_15:00,fri_16:00"
                 data-expense="300000">
                 <div class="content-section">
                     <h1 class="title">yy영어학원</h1>
                     <hr>
-                    <img src="#" alter="yy영어학원" />
                     </h2>
                     <h2 class="expense">300,000만원</h2>
                 </div>
@@ -33,8 +31,6 @@
                 <div class="content-section">
                     <h1 class="title">zz영어학원</h1>
                     <hr>
-                    <img src="#" alter="zz영어학원" />
-
                     </h2>
                     <h2 class="expense">200,000만원</h2>
                 </div>
@@ -46,8 +42,6 @@
                 <div class="content-section">
                     <h1 class="title">xx수학학원</h1>
                     <hr>
-                    <img src="#" alter="xx수학학원" />
-
                     </h2>
                     <h2 class="expense">300,000만원</h2>
                 </div>
@@ -59,8 +53,6 @@
                 <div class="content-section">
                     <h1 class="title">oo피아노학원</h1>
                     <hr>
-                    <img src="#" alter="oo피아노학원" />
-
                     </h2>
                     <h2 class="expense">200,000만원</h2>
                 </div>
@@ -70,26 +62,22 @@
                 <div class="content-section">
                     <h1 class="title">kk태권도</h1>
                     <hr>
-                    <img src="#" alter="kk태권도" />
-
                     <h2 class="expense">180,000만원</h2>
                 </div>
                 <div class="sub">-</div>
             </div>
         </div>
+        <button class="backToSchedule" onclick="location.href = './schedule.html' ">돌아가기</button>
     </aside>
     <div class="payment_wrapper">
         <div id="box">
             <div>
                 <h1>총액 : 470,000원/월</h1>
             </div>
-            <button>결제하기</button>
+            <button onclick="location.href = './thanks.html'" class="pay-button">결제하기</button>
         </div>
     </div>
-    <button class="backToSchedule"><a href="./schedule.html">되돌아가기</a></button>
 </body>
 <script src="./js/pay.js"></script>
-</body>
-
 
 </html>
