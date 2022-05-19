@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pay_aside {
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  height: 100%;
+}
+
+.payment_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#box {
+  position: relative;
+}
+
+#edu_list {
+  margin: 40px;
+  background-color: white;
+  position: relative;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+div.classes {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  min-height: 5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 60, 0.1);
+  padding: 1rem;
+}
+
+div.classes div.content-section {
+  margin: 0 1rem;
+}
+
+.sub {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border-radius: 50%;
+  transition: linear 0.2s;
+}
+
+.sub:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+#box {
+  width: 80%;
+  height: 70%;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box div {
+  background-color: rgb(255, 255, 255);
+}
+
+#box div h1 {
+  padding: 4rem 10rem;
+  border-radius: 15px;
+  overflow-x: hidden;
+}
+
+button {
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  border: none;
+}
+
+button:active {
+  background-color: rgb(219, 219, 219);
+}
+
+.backToSchedule {
+  position: absolute;
+  background-color: rgb(255, 175, 4);
+  font-weight: bold;
+  padding: 1rem;
+  bottom: 2rem;
+  right: 2rem;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.backToSchedule:active {
+  background-color: rgb(255, 104, 4);
+}

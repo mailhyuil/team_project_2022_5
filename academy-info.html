@@ -6,15 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>academy-info</title>
   </head>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/academy-info.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/academy-info.css" />
+  <link rel="stylesheet" href="./css/apply.css" />
+  <link rel="stylesheet" href="./css/basket.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
   <body>
     <section class="allcontent">
-      <nav class="left-bar">
-        <div class="ham-btn">
-          <i class="xi-bars xi-3x"></i>
-        </div>
-      </nav>
+              <!-- ////////////////////////////////////// -->
+        <aside class="aside">
+          <div class="ham-btn">
+            <i class="xi-bars xi-3x"></i>
+          </div>
+          <div>
+              <div id="nav">
+                  <table>
+                      <tr>
+                          <td><input type="text" placeholder="지역"></td>
+                          <td><input type="text" placeholder="과목"></td>
+                          <td><input type="text" placeholder="나이"></td>
+                          <td><input type="text" placeholder="수강료"></td>
+                      </tr>
+                  </table>
+              </div>
+              <div id="edu_list">
+                  <div>
+                      <table>
+                          <tr>
+                              <th>xx학원</th>
+                          </tr>
+                          <tr>
+                              <th>yy학원</th>
+                          </tr>
+                          <tr>
+                              <th>zz학원</th>
+                          </tr>
+                          <tr>
+                              <th>xy학원</th>
+                          </tr>
+                          <tr>
+                              <th>yz학원</th>
+                          </tr>
+                          <tr>
+                              <th>zx학원</th>
+                          </tr>
+                          <tr>
+                              <th>xz학원</th>
+                          </tr>
+                          <tr>
+                              <th>xx학원</th>
+                          </tr>
+                          <tr>
+                              <th>yy학원</th>
+                          </tr>
+                          <tr>
+                              <th>zz학원</th>
+                          </tr>
+                          <tr>
+                              <th>xy학원</th>
+                          </tr>
+                          <tr>
+                              <th>yz학원</th>
+                          </tr>
+                          <tr>
+                              <th>zx학원</th>
+                          </tr>
+                          <tr>
+                              <th>xz학원</th>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+          <button class="btn"><i class="xi-angle-left xi-2x"></i></button>
+      </aside>
+
+        <!-- ////////////////////////////////////// -->
       <div class="map"></div>
       <section class="section">
         <div class="put-in">
@@ -108,6 +176,7 @@
     <div class="basket-button"><i class="xi-cart-o xi-2x"></i>
       <span class="count"></span>
   </div>
+
   <div class="wrapper">
       <div class="toggle_button">
           <i class="xi-angle-right xi-2x"></i>
@@ -146,7 +215,6 @@
                   <h1 class="title">xx수학학원</h1>
                   <hr>
                   <img src="#" alter="xx수학학원" />
-
                   </h2>
                   <h2 class="fee">300,000만원</h2>
               </div>
@@ -170,18 +238,17 @@
                   <h1 class="title">kk태권도</h1>
                   <hr>
                   <img src="#" alter="kk태권도" />
-
                   <h2 class="fee">180,000만원</h2>
               </div>
               <div class="sub">-</div>
           </div>
-
-
       </div>
   </div>
+  <div class="btn_box">
+    <button class="toHome"><a href="./main.html">홈으로</a></button>
+    <button class="toSchedule"><a href="./schedule.html">스케줄로</a></button>
+</div>
   </body>
-  <link rel="stylesheet" href="./css/basket.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <script src="./js/basket.js"></script>
   <script src="./js/academy-info.js"></script>
 </html>
