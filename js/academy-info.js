@@ -1,6 +1,6 @@
 const map_button = document.querySelector(".map"); // map버튼
 const aca_wrapper = document.querySelector(".section"); // info
-const info_wrapper = document.querySelector(".put-in-button");
+const put_in_btn = document.querySelector(".put-in-btn");
 
 map_button.addEventListener("click", () => {
   console.log("hi");
@@ -12,6 +12,11 @@ map_button.addEventListener("click", () => {
     aca_wrapper.classList.toggle("click");
   }
 });
+
+put_in_btn.addEventListener("click", () => {
+  aca_wrapper.classList.remove("click");
+});
+
 // bascket.js
 // basket_wrapper click 에 aca_wrapper add
 // button click 에 aca_wrapper remove
