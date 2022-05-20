@@ -1,133 +1,160 @@
-@import 'reset.css';
+@import "reset.css";
 
 .wrapper {
-    display: flex;
-
+  display: flex;
 }
 
 .table {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .table table {
-    width: 80%;
-    height: 70%;
+  width: 80%;
+  height: 70%;
 }
 
 .table tr,
 th,
 td {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .table th,
 td {
-    border: 1px solid #a8a8a8;
-    width: 2rem;
+  border: 1px solid #a8a8a8;
+  width: 2rem;
 }
 
 .table tr:first-child {
-    font-size: 20px;
-    font-weight: bold;
-    height: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+  height: 1rem;
 }
 
 .table tr:nth-of-type(even):not(tr:first-child) {
-    background-color: rgb(247, 247, 247);
+  background-color: rgb(247, 247, 247);
 }
 
 .table :not(tr:first-child) td {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    height: 5rem;
-    transition: linear 0.2s;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  height: 5rem;
+  transition: linear 0.2s;
 }
 
 img {
-    flex: 1;
-    height: 100vh;
-    background-image: url('../img/map.png');
-    background-size: cover;
+  flex: 1;
+  height: 100vh;
+  background-image: url("../img/map.png");
+  background-size: cover;
 }
 
 .basket {
-    display: flex;
-    width: 80%;
-    margin-top: 1rem;
-    height: 5rem;
-    border: 2px solid #ffc526;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 80%;
+  margin-top: 1rem;
+  height: 5rem;
+  border: 2px solid #ffc526;
+  justify-content: center;
+  align-items: center;
 }
 
 .basket .classes {
-    background-color: rgb(255, 210, 10);
-    font-weight: bold;
-    padding: 0.5rem;
-    margin: 0 5px;
+  background-color: rgb(255, 210, 10);
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0 5px;
 
-    cursor: move;
-    /* fallback if grab cursor is unsupported */
-    cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+  cursor: move;
+  /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
 }
 
 .basket .classes:active {
-    cursor: grabbing;
-    cursor: -moz-grabbing;
-    cursor: -webkit-grabbing;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .sub {
-    font-size: 50px;
-    text-align: center;
-    margin-top: .8rem;
-    width: 4rem;
-    height: 4rem;
-    background-color: rgb(39, 39, 39);
-    color: white;
-    border-radius: 50%;
-    transition: linear 0.2s;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border-radius: 50%;
+  transition: linear 0.2s;
 }
 
 .toPay {
-    position: absolute;
-    background-color: rgb(255, 175, 4);
-    font-weight: bold;
-    padding: 1rem;
-    bottom: 2rem;
-    right: 2rem;
-    cursor: pointer;
-    border: none;
-    border-radius: .3rem;
-    font-size: 1.2rem;
+  position: absolute;
+  background-color: rgb(255, 175, 4);
+  font-weight: bold;
+  padding: 1rem;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
 }
 
 .toPay:active {
-    background-color: rgb(255, 104, 4);
+  background-color: rgb(255, 104, 4);
 }
 
 .toSearch {
-    position: absolute;
-    background-color: rgb(255, 175, 4);
-    font-weight: bold;
-    padding: 1rem;
-    bottom: 2rem;
-    left: 2rem;
-    cursor: pointer;
-    border: none;
-    border-radius: .3rem;
-    font-size: 1.2rem;
+  position: absolute;
+  background-color: rgb(255, 175, 4);
+  font-weight: bold;
+  padding: 1rem;
+  bottom: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
 }
 
 .toSearch:active {
-    background-color: rgb(255, 104, 4);
+  background-color: rgb(255, 104, 4);
+}
+
+.class_point {
+  position: absolute;
+  background-color: #ffffff;
+  font-weight: bold;
+  border-radius: 2rem;
+  border: 5px solid #ffc526;
+  padding: 1rem;
+}
+.class_point:nth-of-type(2) {
+  top: 8rem;
+  right: 20rem;
+}
+.class_point:nth-of-type(3) {
+  top: 20rem;
+  right: 30rem;
+}
+.class_point:nth-of-type(4) {
+  top: 25rem;
+  right: 10rem;
+}
+.class_point:nth-of-type(5) {
+  top: 40rem;
+  right: 20rem;
+}
+.class_point:nth-of-type(6) {
+  top: 20rem;
+  right: 20rem;
 }
