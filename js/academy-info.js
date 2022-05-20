@@ -9,16 +9,13 @@ const right_arrow = aside.querySelector(".xi-angle-right.xi-2x");
 
 for (let btn of map_button) {
   btn.addEventListener("click", () => {
-
     // map누르면 info 나오게
 
-    if (basket_wrapper.className === "wrapper click") {
-      return;
-    } else if (basket_wrapper.className === "wrapper") {
-      aca_wrapper.classList.toggle("click");
-    }
+    aca_wrapper.classList.toggle("click");
 
     if (aca_wrapper.className === "section click") {
+      basket_wrapper.classList.remove("click");
+      basket_button.style.display = "flex";
       basket_button.style.left = "6rem";
       basket_button.style.right = null;
     } else {
@@ -32,31 +29,27 @@ for (let btn of map_button) {
   });
 }
 
-
 put_in_btn.addEventListener("click", () => {
   aca_wrapper.classList.remove("click");
   aside.classList.remove("click");
 
   if (aca_wrapper.className === "section") {
-
     basket_button.style.left = null;
     basket_button.style.right = "5rem";
   } else {
     basket_button.style.left = "6rem";
     basket_button.style.right = null;
   }
-
 });
-
 
 aside_btn.addEventListener("click", () => {
   aside.classList.toggle("click");
   if (aside.className === "aside click") {
-    left_arrow.style.display = "none"
-    right_arrow.style.display = "inline-block"
+    left_arrow.style.display = "none";
+    right_arrow.style.display = "inline-block";
   } else {
-    left_arrow.style.display = "inline-block"
-    right_arrow.style.display = "none"
+    left_arrow.style.display = "inline-block";
+    right_arrow.style.display = "none";
   }
   if (aca_wrapper.className === "section click")
     aca_wrapper.classList.remove("click");
